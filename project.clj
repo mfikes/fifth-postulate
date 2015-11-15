@@ -6,8 +6,9 @@
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/clojurescript "1.7.178"]]
   :plugins [[lein-cljsbuild "1.1.1"]]
-  :cljsbuild {
-    :builds [{
-        :source-paths ["src"]
-        :compiler {
-          :parallel-build false}}]})
+  :cljsbuild {:builds {:single
+                       {:source-paths ["src"]
+                        :compiler     {:parallel-build false}}
+                       :parallel
+                       {:source-paths ["src"]
+                        :compiler     {:parallel-build true}}}})

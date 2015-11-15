@@ -33,3 +33,7 @@ That's approximately a 7x speedup.
 Here is a comparison of what the CPUs look like for each run
 
 <img src="cpus.png"/>
+
+Given this, I tried an experiment where I modified the number of agents being used by the compiler. (By default it is 2 more than the number of cores.) You can see that things roughly linearly scale out to 4 agents, but then start to level off at less than a 7x speedup as you go out beyond 8 agents.
+
+<img src="speedup.jpg"/>

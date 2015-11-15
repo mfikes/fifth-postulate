@@ -29,3 +29,7 @@ Successfully compiled "/Users/mfikes/Projects/fifth-postulate/target/cljsbuild-m
 ```
 
 That's approximately a 7x speedup.
+
+Here is a comparison of what the CPUs look like for each run
+
+<img src="cpus.png"/>

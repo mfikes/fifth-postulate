@@ -6,7 +6,7 @@ This project includes a _lot_ of independent namespaces arranged in a flat hiera
 
 ## Running
 
-1. Build master of ClojureScript and update the `project.clj` file to refer to it.
+1. Build master of ClojureScript and update the `project.clj` file to refer to it. (Clone https://github.com/clojure/clojurescript, do `script/build`, note the version installed in local Maven repo, and edit the `project.clj` file for `fifth-postulate` to refer to same build number.)
 2. Run `lein clean && lein cljsbuild once single` for a regular build.
 3. Run `lein clean && lein cljsbuild once parallel` for a parallel build.
 

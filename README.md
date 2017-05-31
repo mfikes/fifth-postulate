@@ -12,7 +12,7 @@ This project includes a _lot_ of independent namespaces arranged in a flat hiera
 
 ## Results
 
-2 x 2.4 GHz 6-Core Intel Xeon Mac Pro with 24 GB RAM:
+2 x 2.4 GHz 6-Core Intel Xeon Mac Pro with 128 GB RAM:
 
 ```
 $ lein clean && lein cljsbuild once single

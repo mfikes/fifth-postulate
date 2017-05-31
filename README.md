@@ -6,9 +6,8 @@ This project includes a _lot_ of independent namespaces arranged in a flat hiera
 
 ## Running
 
-1. Build master of ClojureScript and update the `project.clj` file to refer to it. (Clone https://github.com/clojure/clojurescript, do `script/build`, note the version installed in local Maven repo, and edit the `project.clj` file for `fifth-postulate` to refer to same build number.)
-2. Run `lein clean && lein cljsbuild once single` for a regular build.
-3. Run `lein clean && lein cljsbuild once parallel` for a parallel build.
+1. Run `lein clean && lein cljsbuild once single` for a regular build.
+2. Run `lein clean && lein cljsbuild once parallel` for a parallel build.
 
 ## Results
 
@@ -18,14 +17,14 @@ This project includes a _lot_ of independent namespaces arranged in a flat hiera
 $ lein clean && lein cljsbuild once single
 Compiling ClojureScript...
 Compiling "/Users/mfikes/Projects/fifth-postulate/target/cljsbuild-main.js" from ["src"]...
-Successfully compiled "/Users/mfikes/Projects/fifth-postulate/target/cljsbuild-main.js" in 1450.718 seconds.
+Successfully compiled "/Users/mfikes/Projects/fifth-postulate/target/cljsbuild-main.js" in 1344.308 seconds.
 ```
 
 ```
 $ lein clean && lein cljsbuild once parallel
 Compiling ClojureScript...
 Compiling "/Users/mfikes/Projects/fifth-postulate/target/cljsbuild-main.js" from ["src"]...
-Successfully compiled "/Users/mfikes/Projects/fifth-postulate/target/cljsbuild-main.js" in 209.565 seconds.
+Successfully compiled "/Users/mfikes/Projects/fifth-postulate/target/cljsbuild-main.js" in 185.079 seconds.
 ```
 
 That's approximately a 7x speedup.

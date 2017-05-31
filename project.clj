@@ -11,4 +11,5 @@
                         :compiler     {:parallel-build false}}
                        :parallel
                        {:source-paths ["src"]
-                        :compiler     {:parallel-build true}}}})
+                        :compiler     {:parallel-build true}}}}
+  :jvm-opts ["-Xmx8g"])
